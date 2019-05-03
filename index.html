@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--CSS style sheet-->
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    
+        <!--Other links-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        <!--Navbar stil needs to be reworked-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Go Vegetarian!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#header">Home<span class="sr-only"> </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <!--<li class="nav-item">-->
+                    <!--    <a class="nav-link disabled" href="#about">About</a>-->
+                    <!--</li>-->
+                    <!--<li class="nav-item">-->
+                    <!--    <a class="nav-link disabled" href="#donate">Donate</a>-->
+                    <!--  </li>-->
+                </ul>
+            </div>
+        </nav>
+        
+<hr>
+
+         <!--Header-->
+        <div id="header" class="header">
+            <div class="slideshow-container">
+                <div class="vegimages">
+                    <img src="https://www.telegraph.co.uk/content/dam/Travel/2017/May/vegetables-vegetarian-xlarge.jpg">
+                </div>
+                <div class="vegimages">
+                    <img src="http://heritagehealthfood.com/wp-content/uploads/2014/06/100-vegetarian.png">
+                </div>
+                <div class="vegimages">
+                    <img src="http://az616578.vo.msecnd.net/files/2016/04/11/635959312881347802-2113731765_635844938523954716879276320_eat-vegetarian-4.jpg">
+                </div>
+                <div class="vegimages">
+                    <img src="http://alternativeresourcesdirectory.com/wp-content/uploads/2015/10/Vegetarian-vegan-vegetable-garden-restaurant-cafe-veggie-oregon-washington.jpg">
+                </div>
+                <!--<div class="vegimages">-->
+                <!--    <img src="">-->
+                <!--</div>-->
+                <!--<div class="vegimages">-->
+                <!--    <img src="">-->
+                <!--</div>-->
+                <!--<div class="vegimages">-->
+                <!--    <img src="">-->
+                <!--</div>-->
+            </div>
+        </div>
+
+<hr>
+    
+        <!--what is vegetarianism-->
+        <div id="vegetarianism">
+            <h1>What Is Vegetarianism?</h1>
+            <p>The parctice of not eating meat or fish, especialy fo moral, religious, or health reasons</p>
+        </div>
+        
+<hr>
+        <!--youtube video for vegetarian beginners-->
+        
+        <div class="cotainer" id="tips">
+            <h1>Tips Before You Go Vegan!</h1>
+            <div class="row">
+                <a href="https://www.youtube.com/watch?v=hB1CDtdcPVQ">
+                    <img src="https://i0.wp.com/blog.chalchalen.com/wp-content/uploads/2016/10/knowbeforeyougo_logo-300x273.png?resize=300%2C273">
+                    <p>click here to watch video</p>
+                    </img>
+                </a>
+            </div>
+            
+            <h1>For more tips on vegetarianism, please see links below</h1>
+            <div class="row">
+                <ol>
+                    <li>
+                        <a href="https://www.vegetariantimes.com/health-and-nutrition/why-go-veg-learn-about-becoming-a-vegetarian">Why Go Veg?</a><img src="https://www.vegetariantimes.com/.image/cs_srgb%2Cq_auto:good/MTYzNzYwODY3Nzc3NzE4MDk3/vt_header.svg">
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
+        
+<hr>
+        
+        <!--restaurant search-->
+        
+        <div class="search" id="search">
+            <h1>Find Vegetarian Resturants Near You!</h1>
+            <div class="container">
+                <div class="row">
+                    <input type="textarea" placeholder="Enter Your Zip Code"/>
+                    <button class="search"> Submit </button>
+                </div>
+                <div class="row" id="restaurantList">
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
