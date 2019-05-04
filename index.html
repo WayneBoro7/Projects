@@ -11,8 +11,10 @@
     <body>
         
         <!--Navbar stil needs to be reworked-->
+        
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Go Vegetarian!</a>
+            <a class="navbar-brand" href="#">Go Vegetarian</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,25 +24,25 @@
                         <a class="nav-link" href="#header">Home<span class="sr-only"> </span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a class="nav-link" href="#tips">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#restaurant">Find Resturants</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a class="nav-link disabled" href="#"></a>
                     </li>
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link disabled" href="#about">About</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                    <!--    <a class="nav-link disabled" href="#donate">Donate</a>-->
-                    <!--  </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"></a>
+                    </li>
                 </ul>
             </div>
         </nav>
-        
-<hr>
+
+<br>
 
          <!--Header-->
         <div id="header" class="header">
@@ -69,7 +71,7 @@
             </div>
         </div>
 
-<hr>
+<br>
     
         <!--what is vegetarianism-->
         <div id="vegetarianism">
@@ -77,7 +79,7 @@
             <p>The parctice of not eating meat or fish, especialy fo moral, religious, or health reasons</p>
         </div>
         
-<hr>
+<br>
         <!--youtube video for vegetarian beginners-->
         
         <div class="cotainer" id="tips">
@@ -94,10 +96,10 @@
             <div class="row">
                 <ol>
                     <li>
-                        <a href="https://www.vegetariantimes.com/health-and-nutrition/why-go-veg-learn-about-becoming-a-vegetarian">Why Go Veg?</a><img src="https://www.vegetariantimes.com/.image/cs_srgb%2Cq_auto:good/MTYzNzYwODY3Nzc3NzE4MDk3/vt_header.svg">
+                        <a href="https://www.vegetariantimes.com/health-and-nutrition/why-go-veg-learn-about-becoming-a-vegetarian"><p>Why Go Veg?<p></p></a><img src="https://www.vegetariantimes.com/.image/cs_srgb%2Cq_auto:good/MTYzNzYwODY3Nzc3NzE4MDk3/vt_header.svg">
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="https://theconversation.com/eat-your-vegetables-studies-show-plant-based-diets-are-good-for-immunity-107964"><p>Eat Your Vegetables</p></a><img src="Artboard.png">
                     </li>
                     <li>
                         <a href=""></a>
@@ -110,16 +112,16 @@
             
         </div>
         
-<hr>
+<br>
         
         <!--restaurant search-->
         
-        <div class="search" id="search">
+        <div class="search" id="restaurant">
             <h1>Find Vegetarian Resturants Near You!</h1>
             <div class="container">
                 <div class="row">
-                    <input type="textarea" placeholder="Enter Your Zip Code"/>
-                    <button class="search"> Submit </button>
+                    <input type="textarea" placeholder="Enter Your City" id="city"/>
+                    <button class="search" onclick="resSearch()"> Submit </button>
                 </div>
                 <div class="row" id="restaurantList">
                     

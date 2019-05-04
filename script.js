@@ -11,63 +11,78 @@ function showSlides() {
     }
     slides[slideIndex].style.display = "block";
     setTimeout(showSlides, 4000);
-};
+}
 
 showSlides();
 
 
 
+let apiKey = "c029f6c66913247ae5c214d8090e237d";
 
 
 
 
-// let apiKey = "c029f6c66913247ae5c214d8090e237d"
-
-
-
-
-
-
-
-// let locReqest = new curl //developers.zomato.com/api/v2.1/cities?q=boston
-
-// locReqest.onload = function 
-//     data = locReqest.open;
+let resSearch = function() {
     
-//     console.log(data)
-// }
-
-// locReqest.send();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // let apiKey = "c029f6c66913247ae5c214d8090e237d";
-
-// // let url = "https://developers.zomato.com/api/v2.1/cities?q=Boston";
-
-// // const request = new XMLHttpRequest();
-
-// // request.open("GET", url, true);
-// // request.setRequestHeader('Authorization:','Bearer', apiKey);
-
-// // request.onload = function (){
-// //     let data = JSON.parse(this.request).value;
+    let city = document.getElementById('city')
     
-// //     console.log(data);
-// // };
+    let locUrl = ("https://developers.zomato.com/api/v2.1/locations?query=" + city)
+    
+    let locRequest = new XMLHttpRequest();
+    
+    
+    locRequest.open("GET", locUrl, true);
+    locRequest.setRequestHeader("content-type", "application/json");
+    locRequest.setRequestHeader("user-key", apiKey);
+    
+    
+    locRequest.onload = function (){
+        let locData = JSON.parse(this.response)
+        
+        console.log(locData)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    locRequest.send();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // let searchUrl = "https://developers.zomato.com/api/v2.1/search?entity_id=280&entity_type=city&cuisines=308";
 
-// // request.send();
+    // let searchRequest = new XMLHttpRequest();
+    
+    // searchRequest.open("GET", searchUrl, true);
+    // searchRequest.setRequestHeader("content-type", "application/json");
+    // searchRequest.setRequestHeader("user-key", apiKey);
+
+
+    // searchRequest.onload = function() {
+    //     let data = JSON.parse(this.response);
+    
+    //     console.log(data);
+    // };
+    
+    // searchRequest.send();
+    
+    
+    
+}
+
+
