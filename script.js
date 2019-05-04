@@ -19,6 +19,11 @@ showSlides();
 
 let apiKey = "c029f6c66913247ae5c214d8090e237d";
 
+// let reset = function (){
+//                       /*global restaurantList*/.removeChild(/*global row*/);
+//                     };
+        
+
 let resSearch = function() {
     
     // gets city id
@@ -35,6 +40,11 @@ let resSearch = function() {
     
     
     locRequest.onload = function (){
+        
+        
+         
+        
+        
         let locData = JSON.parse(this.response);
         
         let cityId = (locData.location_suggestions[0].city_id);
@@ -73,9 +83,18 @@ let resSearch = function() {
                     place.className = "col-6";
                     
                     
+                   
+                   
+                    
                     let p = document.createElement('p');
                     p.textContent = restaurant.restaurant.name;
-                    
+                    p.addEventListener("onclick",  function(){
+                        
+                        let p1 = document.createElement('p')
+                        p1.className = "col-6";
+                        p1.textContent = restaurant.restaurant.location.address;
+                        place.appendChild(p1);
+                    });
                     place.appendChild(p);
                     row.appendChild(place);
                     
