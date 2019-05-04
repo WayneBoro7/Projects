@@ -9,7 +9,7 @@ div > img {
 a + img {
     height: 28px;
     width: 351px;
-    float: right;
+    float: inherit;
 }
 
 nav {
@@ -28,9 +28,32 @@ p , h1 {
   text-align: center;
   font-size: 40px;
   color: #76e51f;
+  
 }
 
 
-div {
-  padding: 40px;
+nav ~ div {
+  padding: 100px;
+}
+
+#meaning {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/*#knowbeforeyougo_logo {*/
+/*  width: 200px;*/
+/*}*/
+
+#know {
+  margin-left: auto;
+  margin-right: auto
+  /*padding: 70px 0;*/
+  /*border: 3px solid green;*/
+}
+
+#restaurant {
+  position: relative
 }
